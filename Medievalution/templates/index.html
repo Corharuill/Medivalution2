@@ -1,0 +1,41 @@
+{% extends 'based.html'%}
+
+{% block title%}
+Medivalution
+{% endblock%}
+
+{% block body%}
+   <h1 align="center">Medivalution</h1>
+  <p>Mdeivalution - мой pet проект, который задуман как игра мечты.
+      Управляйте государством на глобальной карте и сражайтесь на полях битвы в реальном времени.
+      Игра будет охватывать период времени с падения Западной римской империи до падения Константинополя в 1453.
+   </p>
+{% if action != None %}
+    {% for item in action %}
+    <li>{{ item }}</li>
+{% endfor %}
+{% else %}
+    <p>You have completed all stages</p>
+{% endif %}
+
+<br>
+<img  src="/static/images/1.png" height="150" />
+<img src="/static/images/2.png" height="150" />
+<img src="/static/images/3.png" height="150" />
+<img src="/static/images/4.png" height="150" />
+
+<br>
+<br>
+
+<center>
+<video  height="620" controls>
+  <source src="/static/video/Medievalution 2025-02-23 22-16-27.mp4" type="video/mp4">
+</video>
+</center>
+  <p align="right"><strong>Жанр - 4x RTStrategy.</strong></p>
+  <p>Проект вдохновлен такими играми как:
+      Victoria II, Crusader Kings II, Europa Universalis IV, Knights of Honor, Total War.</p>
+
+
+{% endblock%}
+
