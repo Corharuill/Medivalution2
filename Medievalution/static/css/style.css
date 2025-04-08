@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Petrovich';
+  src: url("/static/fonts/Blackmoor.ttf") format('ttf')
+}
+
+.font-petrovich {
+    font-family:"Petrovich";
+    font-size:100px;
+}
+.image-container {
+text-align: center;
+        margin-top: 50px;
+    }
+    img {
+        max-width:840px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    .zoomed {
+        transform: scale(3); /* Увеличение в 2 раза */
+    }
